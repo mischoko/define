@@ -11,18 +11,18 @@
 </head>
 <body>
       <div class="container">
-            <nav>
+            <nav id="nav" class="origNav">
                   <input type="checkbox" id="nav" class="hidden">
                   <label for="nav" class="nav-btn"><i></i><i></i><i></i></label>
                   <div class="logo">
                         <a href="https://www.define.sk/"><div class="mainLogo"></div></a>
                   </div>
                   <div class="nav-wrapper">
-                        <ul>
-                              <li><a href="#">Služby</a></li>
-                              <li><a href="#">Portfólio</a></li>
-                              <li><a href="https://www.define.sk/blog">Blog</a></li>
-                              <li><a href="#">Kontakt</a></li>
+                        <ul id="menu">
+                              <li><a class="menuItem" href="#">Služby</a></li>
+                              <li><a class="menuItem" href="#">Portfólio</a></li>
+                              <li><a class="menuItem" href="https://www.define.sk/blog">Blog</a></li>
+                              <li><a class="menuItem" href="#">Kontakt</a></li>
                         </ul>
                   </div>
             </nav>
@@ -123,9 +123,11 @@
                         </div>
                   </div>
             </section>
-            <footer>
-                  <p>&copy; 2019 Define design</p>
-            </footer>
       </main>
+      <footer>
+            <p>&copy; 2019 Define design</p>
+      </footer>
+      <script src="js/main.js"></script>
+      <script src="js/jquery.svgInject.js"></script>
 </body>
 </html>
