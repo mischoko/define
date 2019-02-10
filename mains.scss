@@ -31,6 +31,10 @@
   .whiteOut{
     color: white;
   }
+  .menuFix{
+    transition-duration: .5s;
+    margin-top: 20px;
+  }
 
   .logo {
     float: left;
@@ -55,6 +59,7 @@
   nav ul {
     float: right;
     margin-top: 35px;
+    transition-duration: .5s;
     position: fixed;
     right: 60px;
     z-index: 999999;
