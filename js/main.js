@@ -14,6 +14,9 @@ window.onscroll = function() {
     var logo5 = document.getElementsByClassName('st0')[5];
     var logo6 = document.getElementsByClassName('st0')[6];
     var logoMargin = document.getElementsByClassName('logo')[0];
+    var mobileBtn = document.getElementsByClassName('ibtn')[0];
+    var mobileBtn1 = document.getElementsByClassName('ibtn')[1];
+    var mobileBtn2 = document.getElementsByClassName('ibtn')[2];   
     if ( window.pageYOffset > 100 ) {
             nav.classList.add("blackNav");
             color0.classList.add("whiteOut");
@@ -29,6 +32,9 @@ window.onscroll = function() {
             logo5.style.fill = "white";
             logo6.style.fill = "white";
             logoMargin.classList.add("marginLogoFix");
+            mobileBtn.style.background = "#ffffff";
+            mobileBtn1.style.background = "#ffffff";
+            mobileBtn2.style.background = "#ffffff";
     }
     else {
             nav.classList.remove("blackNav");
@@ -45,5 +51,24 @@ window.onscroll = function() {
             logo5.style.fill = "#393939";
             logo6.style.fill = "#393939";
             logoMargin.classList.remove("marginLogoFix");
+            mobileBtn.style.background = "#393939";
+            mobileBtn1.style.background = "#393939";
+            mobileBtn2.style.background = "#393939";
     }
 }
+function fun() {
+    var checkbox = document.getElementById('navBtn');
+    var ibtn = document.getElementsByClassName('ibtn')[0];
+    var ibtn1 = document.getElementsByClassName('ibtn')[1];
+    var ibtn2 = document.getElementsByClassName('ibtn')[2];
+    var bug = document.getElementsByClassName('nav-wrapper')[0];
+    if (checkbox.checked == true){
+      window.scrollTo(top)
+      bug.classList.remove("hidden");
+      ibtn.style.background = "#393939";
+      ibtn1.style.background = "#393939";
+      ibtn2.style.background = "#393939";
+    } else {
+        bug.classList.add("hidden");
+    }
+  } 

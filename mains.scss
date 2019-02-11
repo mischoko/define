@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Nunito Sans', Helvetica, sans-serif;
+    scroll-behavior: smooth;
   }
   p, h1, h2{
     text-rendering: optimizeLegibility !important;
@@ -224,6 +225,7 @@
         top: 700px;
         width: 400px;
         right: $marginInit;
+        transition-duration: .5s;
     }
 }
 //services
@@ -295,6 +297,10 @@
                     padding: 9px 8px 8px 8px;
                     border-radius: 3px;
                 }
+                textarea{
+                  resize: none;
+                  height: 125px;
+                }
                 label{
                     color: $lightGray;
                 }
@@ -324,11 +330,24 @@
                 .subhead{
                     color: $darkGray;
                     font-size: 1.2em;
-                    font-weight: 600;
+                    font-weight: 900;
                 }
                 .par{
                     color: $lightGray;
                     margin-top: 10px;
+                }
+                .socialMedia{
+                  a{
+                    i{
+                      font-size: 1.4em;
+                      color: $darkGray;
+                      margin-right: 25px;
+                      transition-duration: .2em;
+                      &:hover{
+                        color: $lightGray;
+                      }
+                    }
+                  }
                 }
             }
         }
@@ -351,10 +370,33 @@ footer{
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
+@media screen and (max-width: 1200px) {
+  .caseStudy{
+    .labzoneCsPhone{
+      right: $marginMob;
+      transition-duration: .5s;
+    }
+  }
+  .logo, .mainImg > .tagline{
+    left: $marginMob;
+    padding-left: 0;
+    transition-duration: .5s;
+  }
+  .aboutUs, .caseStudy > .containCs, .services > .containSer, .contact > .containCont{
+    margin-left: $marginMob;
+    margin-right: $marginMob;
+    transition-duration: .5s;
+  }
+}
   @media screen and (max-width: 864px) {
     .logo {
       padding: 0;
       margin-top: 18px;
+      a{
+        .mainLogo{
+          margin-top: 8px;
+        }
+      }
     }
     .nav-wrapper {
       position: fixed;
@@ -431,9 +473,7 @@ footer{
           margin-top: 4px;
         }
       }
-    }
-  }
-  
+    }  
   #navBtn:checked {
     + .nav-btn {
       transform: rotate(45deg);
@@ -459,8 +499,105 @@ footer{
         transform: translateX(0);
       }
     }
-  }
-  
+  } 
   .hidden {
     display: none;
   }
+  //case study
+  .caseStudy{
+    .containCs{
+      .par{
+        max-width: 300px;
+      }
+    }
+    .labzoneCsPhone{
+      width: 300px;
+      right: 0;
+      top: 780px;
+    }
+  }
+  //services
+  .services{
+    .containSer{
+      .serFlex{
+        .servCluster{
+          flex-direction: column;
+          .servUnit{
+            .subhead{
+              margin-bottom: 0;
+            }
+            .par{
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  //top img
+  .mainImg{
+    height: 260px;
+    .tagline{
+      top: 100px;
+      font-size: 1.8em;
+    }
+  }
+  //about us
+  .aboutUs{
+    margin-top: 40px;
+  }
+  //case study
+  .caseStudy{
+    margin-top: 50px;
+    height: 230px;
+    .containCs{
+      .linkCs{
+        padding-top: 30px;
+      }
+      .par{
+        max-width: none;
+        margin-top: 25px;
+        margin-bottom: 40px
+      }
+    }
+    .labzoneCsPhone{
+      display: none;
+    }
+  }
+  //services
+  .services{
+    margin-top: 0;
+    .containSer{
+      margin-top: 40px;
+      .header{
+        margin-bottom: 0;
+      }
+      .serFlex{
+        margin-top: 5px;
+        .servCluster{
+          .servUnit{
+            .subhead{
+              margin-bottom: 5px;
+            }
+            .par{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  //testimonials
+  .testimonials{
+    margin-top: 40px;
+  }
+  //contact
+  .contact{
+    .containCont{
+      margin-top: 40px;
+    }
+  }
+}
