@@ -28,6 +28,10 @@ html body {
   background-color: #393939;
 }
 
+.blackNav ul li a:hover {
+  color: #ccc;
+}
+
 .whiteOut {
   color: white;
 }
@@ -38,12 +42,18 @@ html body {
   margin-top: 20px;
 }
 
+.marginLogoFix {
+  margin-top: 7px !important;
+}
+
 .logo {
   float: left;
   padding: 8px;
   left: 60px;
   margin-top: 15px;
   position: fixed;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .logo a {
@@ -54,7 +64,6 @@ html body {
 }
 
 .logo a .mainLogo {
-  background: url("imgs/logo_define.svg") no-repeat;
   width: 85px;
   height: 30px;
 }
@@ -341,9 +350,10 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   padding-right: 20%;
+  max-width: 650px;
 }
 
 .contact .containCont .contForm form .input-subject, .contact .containCont .contForm form .input-email, .contact .containCont .contForm form textarea {
@@ -381,8 +391,8 @@ nav ul li a:hover {
 }
 
 .contact .containCont .contForm .contInfo {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
 }
 
 .contact .containCont .contForm .contInfo .subhead {
@@ -501,12 +511,12 @@ footer p {
   }
 }
 
-#nav:checked + .nav-btn {
+#navBtn:checked + .nav-btn {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#nav:checked + .nav-btn i {
+#navBtn:checked + .nav-btn i {
   background: #000;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
@@ -514,26 +524,26 @@ footer p {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-#nav:checked + .nav-btn i:nth-child(1) {
+#navBtn:checked + .nav-btn i:nth-child(1) {
   -webkit-transform: translateY(6px) rotate(180deg);
           transform: translateY(6px) rotate(180deg);
 }
 
-#nav:checked + .nav-btn i:nth-child(2) {
+#navBtn:checked + .nav-btn i:nth-child(2) {
   opacity: 0;
 }
 
-#nav:checked + .nav-btn i:nth-child(3) {
+#navBtn:checked + .nav-btn i:nth-child(3) {
   -webkit-transform: translateY(-6px) rotate(90deg);
           transform: translateY(-6px) rotate(90deg);
 }
 
-#nav:checked ~ .nav-wrapper {
+#navBtn:checked ~ .nav-wrapper {
   z-index: 9990;
   opacity: 1;
 }
 
-#nav:checked ~ .nav-wrapper ul li a {
+#navBtn:checked ~ .nav-wrapper ul li a {
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);

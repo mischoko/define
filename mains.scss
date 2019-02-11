@@ -27,6 +27,15 @@
   }
   .blackNav{
     background-color: $darkGray;
+    ul{
+      li{
+        a{
+          &:hover{
+            color: #ccc;
+          }
+        }
+      }
+    }
   }
   .whiteOut{
     color: white;
@@ -35,6 +44,9 @@
     transition-duration: .5s;
     margin-top: 20px;
   }
+  .marginLogoFix{
+    margin-top: 7px !important;
+  }
 
   .logo {
     float: left;
@@ -42,14 +54,13 @@
     left: 60px;
     margin-top: 15px;
     position: fixed;
-
+    transition-duration: .5s;
     a {
       color: $darkGray;
       font-weight: 700;
       font-size: 18px;
       text-decoration: none;
       .mainLogo{
-        background: url('imgs/logo_define.svg')no-repeat;
         width: 85px;
         height: 30px;
       }
@@ -275,8 +286,9 @@
             form{
                 display: flex;
                 flex-direction: column;
-                flex-basis: 50%;
+                flex-basis: 65%;
                 padding-right: 20%;
+                max-width: 650px;
                 .input-subject, .input-email, textarea{
                     margin-top: 20px;
                     border: #aaa 1px solid;
@@ -308,7 +320,7 @@
                 }
             }
             .contInfo{
-                flex-basis: 50%;
+                flex-basis: 35%;
                 .subhead{
                     color: $darkGray;
                     font-size: 1.2em;
@@ -422,7 +434,7 @@ footer{
     }
   }
   
-  #nav:checked {
+  #navBtn:checked {
     + .nav-btn {
       transform: rotate(45deg);
       i {
