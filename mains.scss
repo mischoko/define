@@ -123,6 +123,9 @@
     margin-left: $marginInit;
     margin-right: $marginInit;
     .header{
+      br{
+        display: none;
+      }
         color: $darkGray;
         font-size: 1.5em;
     }
@@ -170,6 +173,7 @@
     height: 400px;
     background: url('imgs/labzone_cs.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
     .containCs{
         margin-left: $marginInit;
         margin-right: $marginInit;
@@ -278,6 +282,7 @@
     .testimonialsLogos{
       background: url('imgs/testimonials_logos.png')no-repeat;
       background-size: contain;
+      background-position: center;
       height: 340px;
       align-self: center;
       width: 1000px;
@@ -545,6 +550,13 @@ footer{
       }
     }
   }
+  //testimonials
+  .testimonials{
+    height: 300px;
+    .testimonialsLogos{
+      height: 260px;
+    }
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -603,12 +615,138 @@ footer{
   }
   //testimonials
   .testimonials{
+    height: 240px;
     margin-top: 40px;
   }
   //contact
   .contact{
     .containCont{
       margin-top: 40px;
+      .contForm{
+        form{
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact{
+    .containCont{
+      .header{
+        margin-bottom: 0;
+      }
+      .contForm{
+        flex-direction: column;
+        form{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutUs{
+    wrapper{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  //case study
+  .caseStudy{
+    height: 240px;
+    margin-top: 40px;
+    .containCs{
+      wrapper{
+        display: block;
+        width: 100%;
+        text-align: center;
+        .btnCs{
+          padding: 6px 34px 6px 34px;
+          &:hover{
+            padding: 6px 34px 6px 34px;
+          }
+        }
+      }
+    }
+  }
+  //testimonials
+  .testimonials{
+    height: 380px;
+    .testimonialsLogos{
+      background: url('imgs/testimonials_logos_m.png')no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 340px;
+      align-self: center;
+      width: 520px; 
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mainImg{
+    height: 200px;
+    .tagline{
+      top: 95px;
+      font-size: 1.4em;
+    }
+  }
+  .aboutUs{
+    margin-top: 35px;
+    .header{
+      br{
+        display: block;
+      }
+    }
+  }
+  .caseStudy{
+    margin-top: 30px;
+  }
+  .services{
+    .containSer{
+      margin-top: 30px;
+    }
+  }
+  .testimonials{
+    margin-top: 35px;
+  }
+  .contact{
+    .containCont{
+      margin-top: 30px;
+      .contForm{
+        .contInfo{
+          .subhead{
+            margin-top: 40px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  //case study
+  .caseStudy{
+    height: 250px;
+    .containCs{
+      .par{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  //testimonials
+  .testimonials{
+    height: 310px;
+    .testimonialsLogos{
+      background: url('imgs/testimonials_logos_m.png')no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 340px;
+      align-self: center;
+      width: 1000px; 
     }
   }
 }

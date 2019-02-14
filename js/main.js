@@ -56,12 +56,13 @@ window.onscroll = function() {
             mobileBtn2.style.background = "#393939";
     }
 }
+
 function fun() {
     var checkbox = document.getElementById('navBtn');
     var ibtn = document.getElementsByClassName('ibtn')[0];
     var ibtn1 = document.getElementsByClassName('ibtn')[1];
     var ibtn2 = document.getElementsByClassName('ibtn')[2];
-    var bug = document.getElementsByClassName('nav-wrapper')[0];
+    var bug = document.getElementById('mobileMenu');
     if (checkbox.checked == true){
       window.scrollTo(top)
       bug.classList.remove("hidden");
@@ -73,7 +74,7 @@ function fun() {
     }
 }
 
-//scrolling function
+//scrolling function services
 document.querySelector('.menuServBtn').addEventListener("click", function(event) {
     event.preventDefault();
     var offset = 0, y = 0, dy, call = setInterval(function(){
@@ -84,3 +85,24 @@ document.querySelector('.menuServBtn').addEventListener("click", function(event)
     offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
 		y = document.documentElement.scrollTop;
 });
+//scrolling function contacts
+document.querySelector('.menuContBtn').addEventListener("click", function(event) {
+    event.preventDefault();
+    var offset = 0, y = 0, dy, call = setInterval(function(){
+    	if( Math.abs(dy=offset-y)>1 ) y += dy;
+      else { clearInterval(call); y = offset; }
+      document.documentElement.scrollTop = y - 120;
+    },10);
+    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
+		y = document.documentElement.scrollTop;
+});
+
+window.onload = function(){
+    var width = window.innerWidth;
+    var saveMenu = document.getElementById('mobileMenu');
+    if(width > 864){
+        saveMenu.classList.remove('hidden');
+    } else{
+        saveMenu.classList.add('hidden');
+    }
+};

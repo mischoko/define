@@ -71,12 +71,12 @@
                               </svg>
                         </a>
                   </div>
-                  <div class="nav-wrapper">
+                  <div class="nav-wrapper hidden" id="mobileMenu">
                         <ul id="menu">
                               <li><a class="menuItem menuServBtn" href="#" data-scroll="servScroll">Služby</a></li>
                               <li><a class="menuItem" href="#">Portfólio</a></li>
                               <li><a class="menuItem" href="https://www.define.sk/blog">Blog</a></li>
-                              <li><a class="menuItem" href="#">Kontakt</a></li>
+                              <li><a class="menuItem menuContBtn" href="#" data-scroll="contScroll">Kontakt</a></li>
                         </ul>
                   </div>
             </nav>
@@ -86,10 +86,10 @@
       </div>
       <main>
             <section class="aboutUs">
-                  <h1 class="header">SPÁJAME DIZAJN A BUSINESS</h1>
+                  <h1 class="header">SPÁJAME DIZAJN<br> A BUSINESS</h1>
                   <p class="par">Tvoríme vizuálne a komunikačné stratégie, pomocou ktorých našim klientom
-                              pomáhame škálovať ich business a posúvať sa tak do ďalších levelov.</p>
-                  <a href="#">Naša práca<span><i class="fa fa-caret-right"></i></span></a>
+                              pomáhame škálovať ich business a posúvať sa tak dopredu.</p>
+                  <wrapper><a href="#">Naša práca<span><i class="fa fa-caret-right"></i></span></a></wrapper>
             </section>
             <section class="caseStudy">
                   <div class="containCs">
@@ -98,7 +98,7 @@
                                     Jednoduché UI riešenie webu - one page design pre spoločnosť
                                     zaoberajúcu sa nielen IT ale aj business developmentom.
                         </p>
-                        <a class="btnCs" href="#">Viac info<span><i class="fa fa-caret-right"></i></span></a>
+                        <wrapper><a class="btnCs" href="#">Viac info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
                   </div>
                   <img src="imgs/labzone_cs_phone.png" class="labzoneCsPhone">
             </section>
@@ -149,7 +149,7 @@
             <section class="testimonials">
                   <div class="testimonialsLogos"></div>
             </section>
-            <section class="contact">
+            <section class="contact section" id="contScroll">
                   <div class="containCont">
                         <h1 class="header">KONTAKT</h1>
                         <div class="contForm">
