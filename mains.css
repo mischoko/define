@@ -204,12 +204,12 @@ nav ul li a:hover {
 
 .caseStudy .containCs .linkCs {
   padding-top: 50px;
-  color: #787878;
+  color: white;
 }
 
 .caseStudy .containCs .linkCs a {
   text-decoration: none;
-  color: #787878;
+  color: white;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
@@ -219,7 +219,7 @@ nav ul li a:hover {
 }
 
 .caseStudy .containCs .par {
-  color: #393939;
+  color: white;
   max-width: 400px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -228,11 +228,11 @@ nav ul li a:hover {
 .caseStudy .containCs .btnCs {
   text-align: center;
   background: none;
-  border: solid 1px #787878;
+  border: solid 1px white;
   padding: 6px 24px 6px 24px;
   border-radius: 50px;
   text-decoration: none;
-  color: #393939;
+  color: white;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
@@ -251,13 +251,13 @@ nav ul li a:hover {
 }
 
 .caseStudy .containCs .btnCs:hover {
-  color: #393939;
-  border: solid 1px #393939;
+  color: white;
+  border: solid 1px white;
   padding: 6px 20px 6px 24px;
 }
 
 .caseStudy .containCs .btnCs:hover span {
-  color: #393939;
+  color: white;
   padding-left: 18px;
   padding-right: 5px;
 }
@@ -444,8 +444,8 @@ nav ul li a:hover {
   font-size: 1.4em;
   color: #393939;
   margin-right: 25px;
-  -webkit-transition-duration: .2em;
-          transition-duration: .2em;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .contact .containCont .contForm .contInfo .socialMedia a i:hover {

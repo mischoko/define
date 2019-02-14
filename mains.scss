@@ -179,10 +179,10 @@
         margin-right: $marginInit;
         .linkCs{
             padding-top: 50px;
-            color: $lightGray;
+            color: white;
             a{
                 text-decoration: none;
-                color: $lightGray;
+                color: white;
                 transition-duration: .2s;
                 &:hover{
                     color: $darkGray;
@@ -190,7 +190,7 @@
             }
         }
         .par{
-            color: $darkGray;
+            color: white;
             max-width: 400px;
             margin-top: 80px;
             margin-bottom: 80px;
@@ -198,11 +198,11 @@
         .btnCs{
             text-align: center;
             background: none;
-            border: solid 1px $lightGray;
+            border: solid 1px white;
             padding: 6px 24px 6px 24px;
             border-radius: 50px;
             text-decoration: none;
-            color: $darkGray;
+            color: white;
             transition-duration: .2s;
             span{
                 color: transparent;
@@ -215,11 +215,11 @@
                 }
             }
             &:hover{
-                color: $darkGray;
-                border: solid 1px $darkGray;
+                color: white;
+                border: solid 1px white;
                 padding: 6px 20px 6px 24px;
                 span{
-                    color: $darkGray;
+                    color: white;
                     padding-left: 18px;
                     padding-right: 5px;
                 }
@@ -358,7 +358,7 @@
                       font-size: 1.4em;
                       color: $darkGray;
                       margin-right: 25px;
-                      transition-duration: .2em;
+                      transition-duration: .2s;
                       &:hover{
                         color: $lightGray;
                       }
