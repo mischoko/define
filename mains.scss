@@ -112,7 +112,7 @@
         top: 230px;
         font-size: 3em;
         left: $marginInit;
-        color: $darkGray;
+        color: #009daf;
         left: 18%;
         line-height: 1.3em;
     }
@@ -335,8 +335,9 @@
                     margin: 0 auto;
                     margin-top: 20px;
                     &:hover{
-                        color: $darkGray;
-                        border: solid 1px $darkGray;
+                        color: white;
+                        background: #009daf;
+                        border: solid 1px #009daf;
                         cursor: pointer;
                     }
                 }
@@ -360,7 +361,7 @@
                       margin-right: 25px;
                       transition-duration: .2s;
                       &:hover{
-                        color: $lightGray;
+                        color: #009daf;
                       }
                     }
                   }
@@ -371,13 +372,13 @@
 }
 //footer
 footer{
-    background: #d4dcde;
+    background: $darkGray;
     width: 100%;
     text-align: center;
     margin-top: 40px;
     p{
         margin: 0;
-        color: $darkGray;
+        color: white;
         font-size: .85em;
         padding: 8px 0px 7px 0px;
     }
@@ -739,7 +740,7 @@ footer{
   }
   //testimonials
   .testimonials{
-    height: 310px;
+    height: 340px;
     .testimonialsLogos{
       background: url('imgs/testimonials_logos_m.png')no-repeat;
       background-size: contain;

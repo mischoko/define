@@ -17,7 +17,7 @@ window.onscroll = function() {
     var mobileBtn = document.getElementsByClassName('ibtn')[0];
     var mobileBtn1 = document.getElementsByClassName('ibtn')[1];
     var mobileBtn2 = document.getElementsByClassName('ibtn')[2];   
-    if ( window.pageYOffset > 100 ) {
+    if ( window.pageYOffset > 50 ) {
             nav.classList.add("blackNav");
             color0.classList.add("whiteOut");
             color1.classList.add("whiteOut");
@@ -63,8 +63,16 @@ function fun() {
     var ibtn1 = document.getElementsByClassName('ibtn')[1];
     var ibtn2 = document.getElementsByClassName('ibtn')[2];
     var bug = document.getElementById('mobileMenu');
+    var color0 = document.getElementsByClassName('menuItem')[0];
+    var color3 = document.getElementsByClassName('menuItem')[3];
     if (checkbox.checked == true){
       window.scrollTo(top)
+      color0.addEventListener("click", function(){
+          checkbox.checked = false;
+      })
+      color3.addEventListener("click", function(){
+          checkbox.checked = false;
+      })
       bug.classList.remove("hidden");
       ibtn.style.background = "#393939";
       ibtn1.style.background = "#393939";
@@ -80,7 +88,7 @@ document.querySelector('.menuServBtn').addEventListener("click", function(event)
     var offset = 0, y = 0, dy, call = setInterval(function(){
     	if( Math.abs(dy=offset-y)>1 ) y += dy;
       else { clearInterval(call); y = offset; }
-      document.documentElement.scrollTop = y - 120;
+      document.documentElement.scrollTop = y - 90;
     },10);
     offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
 		y = document.documentElement.scrollTop;
@@ -91,15 +99,16 @@ document.querySelector('.menuContBtn').addEventListener("click", function(event)
     var offset = 0, y = 0, dy, call = setInterval(function(){
     	if( Math.abs(dy=offset-y)>1 ) y += dy;
       else { clearInterval(call); y = offset; }
-      document.documentElement.scrollTop = y - 120;
+      document.documentElement.scrollTop = y - 90;
     },10);
     offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
 		y = document.documentElement.scrollTop;
 });
-
+//fixes the mobile menu overlay bug
 window.onload = function(){
     var width = window.innerWidth;
     var saveMenu = document.getElementById('mobileMenu');
+    var color0 = document.getElementsByClassName('menuItem')[0];
     if(width > 864){
         saveMenu.classList.remove('hidden');
     } else{

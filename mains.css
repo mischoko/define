@@ -124,7 +124,7 @@ nav ul li a:hover {
   top: 230px;
   font-size: 3em;
   left: 18%;
-  color: #393939;
+  color: #009daf;
   left: 18%;
   line-height: 1.3em;
 }
@@ -419,8 +419,9 @@ nav ul li a:hover {
 }
 
 .contact .containCont .contForm form #submit:hover {
-  color: #393939;
-  border: solid 1px #393939;
+  color: white;
+  background: #009daf;
+  border: solid 1px #009daf;
   cursor: pointer;
 }
 
@@ -449,11 +450,11 @@ nav ul li a:hover {
 }
 
 .contact .containCont .contForm .contInfo .socialMedia a i:hover {
-  color: #787878;
+  color: #009daf;
 }
 
 footer {
-  background: #d4dcde;
+  background: #393939;
   width: 100%;
   text-align: center;
   margin-top: 40px;
@@ -461,7 +462,7 @@ footer {
 
 footer p {
   margin: 0;
-  color: #393939;
+  color: white;
   font-size: .85em;
   padding: 8px 0px 7px 0px;
 }
@@ -787,7 +788,7 @@ footer p {
     margin-bottom: 30px;
   }
   .testimonials {
-    height: 310px;
+    height: 340px;
   }
   .testimonials .testimonialsLogos {
     background: url("imgs/testimonials_logos_m.png") no-repeat;
