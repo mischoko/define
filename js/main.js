@@ -71,4 +71,16 @@ function fun() {
     } else {
         bug.classList.add("hidden");
     }
-  } 
+}
+
+//scrolling function
+document.querySelector('.menuServBtn').addEventListener("click", function(event) {
+    event.preventDefault();
+    var offset = 0, y = 0, dy, call = setInterval(function(){
+    	if( Math.abs(dy=offset-y)>1 ) y += dy;
+      else { clearInterval(call); y = offset; }
+      document.documentElement.scrollTop = y - 120;
+    },10);
+    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
+		y = document.documentElement.scrollTop;
+});

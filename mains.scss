@@ -6,7 +6,9 @@
   p, h1, h2{
     text-rendering: optimizeLegibility !important;
   }
-
+  .hidden {
+    display: none;
+  }
   $darkGray: #393939;
   $lightGray: #787878;
   $marginInit: 18%;
@@ -271,6 +273,15 @@
     width: 100%;
     height: 500px;
     margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    .testimonialsLogos{
+      background: url('imgs/testimonials_logos.png')no-repeat;
+      background-size: contain;
+      height: 340px;
+      align-self: center;
+      width: 1000px;
+    }
 }
 //contact
 .contact{
