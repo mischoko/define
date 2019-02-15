@@ -6,6 +6,7 @@ window.onscroll = function() {
     var color2 = document.getElementsByClassName('menuItem')[2];
     var color3 = document.getElementsByClassName('menuItem')[3];
     var fix = document.getElementById('menu');
+    var navBtnfix = document.getElementsByClassName('nav-btn')[0];
     var logo = document.getElementsByClassName('st0')[0];
     var logo1 = document.getElementsByClassName('st0')[1];
     var logo2 = document.getElementsByClassName('st0')[2];
@@ -35,6 +36,7 @@ window.onscroll = function() {
             mobileBtn.style.background = "#ffffff";
             mobileBtn1.style.background = "#ffffff";
             mobileBtn2.style.background = "#ffffff";
+            navBtnfix.style.top = "10px";
     }
     else {
             nav.classList.remove("blackNav");
@@ -54,6 +56,7 @@ window.onscroll = function() {
             mobileBtn.style.background = "#393939";
             mobileBtn1.style.background = "#393939";
             mobileBtn2.style.background = "#393939";
+            navBtnfix.style.top = "20px";
     }
 }
 
@@ -115,3 +118,48 @@ window.onload = function(){
         saveMenu.classList.add('hidden');
     }
 };
+
+//mailer script
+!function(){
+    var contactForm = document.querySelector('.contact_form');
+    var subjectElement = document.querySelector('.input-subject');
+    var emailElement = document.querySelector('.input-email');
+    var messageElement = document.querySelector('.input-message');
+    var calendarElement = document.querySelector('.calendar');
+    var successAlertElement = document.querySelector('.successAlert');
+    var contactFormElement = document.querySelector('.contact_form');
+
+    function onComplete () {
+        calendarElement.style.display = 'none';
+        successAlertElement.style.display = 'block';
+        contactFormElement.reset();
+    }
+  
+  	function onSubmit(event) {
+        var email = emailElement.value;
+        var message = emailElement.value;
+
+        if (email && message) {
+
+            var request = new XMLHttpRequest();
+            var url = "http://www.define.sk/new/php.php"
+
+            request.open('POST', url);
+
+            var subject = subjectElement.value;
+            var data = "email=" + email + "&message=" + message + "&subj=" + subject;
+            request.send(data);
+
+            request.onreadystatechange = function () {
+                if(request.readyState === 4) {
+                    onComplete();
+                }
+            };
+        }
+
+        event.preventDefault();
+        return false;
+    };
+
+    contactForm.onsubmit = onSubmit;
+}();

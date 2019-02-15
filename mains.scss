@@ -112,7 +112,7 @@
         top: 230px;
         font-size: 3em;
         left: $marginInit;
-        color: #009daf;
+        color: $darkGray;
         left: 18%;
         line-height: 1.3em;
     }
@@ -123,9 +123,6 @@
     margin-left: $marginInit;
     margin-right: $marginInit;
     .header{
-      br{
-        display: none;
-      }
         color: $darkGray;
         font-size: 1.5em;
     }
@@ -138,7 +135,7 @@
     a{
         text-align: center;
         background: none;
-        border: solid 1px $lightGray;
+        border: solid 1px $darkGray;
         padding: 6px 24px 6px 24px;
         border-radius: 50px;
         text-decoration: none;
@@ -179,10 +176,10 @@
         margin-right: $marginInit;
         .linkCs{
             padding-top: 50px;
-            color: white;
+            color: $darkGray;
             a{
                 text-decoration: none;
-                color: white;
+                color: $darkGray;
                 transition-duration: .2s;
                 &:hover{
                     color: $darkGray;
@@ -190,7 +187,7 @@
             }
         }
         .par{
-            color: white;
+            color: $darkGray;
             max-width: 400px;
             margin-top: 80px;
             margin-bottom: 80px;
@@ -198,11 +195,11 @@
         .btnCs{
             text-align: center;
             background: none;
-            border: solid 1px white;
+            border: solid 1px $darkGray;
             padding: 6px 24px 6px 24px;
             border-radius: 50px;
             text-decoration: none;
-            color: white;
+            color: $darkGray;
             transition-duration: .2s;
             span{
                 color: transparent;
@@ -215,11 +212,11 @@
                 }
             }
             &:hover{
-                color: white;
-                border: solid 1px white;
+                color: $darkGray;
+                border: solid 1px $darkGray;
                 padding: 6px 20px 6px 24px;
                 span{
-                    color: white;
+                    color: $darkGray;
                     padding-left: 18px;
                     padding-right: 5px;
                 }
@@ -336,8 +333,8 @@
                     margin-top: 20px;
                     &:hover{
                         color: white;
-                        background: #009daf;
-                        border: solid 1px #009daf;
+                        background: $darkGray;
+                        border: solid 1px $darkGray;
                         cursor: pointer;
                     }
                 }
@@ -361,7 +358,7 @@
                       margin-right: 25px;
                       transition-duration: .2s;
                       &:hover{
-                        color: #009daf;
+                        color: $lightGray;
                       }
                     }
                   }
@@ -465,13 +462,14 @@ footer{
     .nav-btn {
       position: fixed;
       right: 10px;
-      top: 10px;
+      top: 20px;
       display: block;
       width: 48px;
       height: 48px;
       cursor: pointer;
       z-index: 9999;
       border-radius: 50%;
+      transition-duration: .5s;
       i {
         display: block;
         width: 20px;
@@ -632,6 +630,11 @@ footer{
   }
 }
 @media screen and (max-width: 575px) {
+  .aboutUs{
+    .header{
+      font-size: 1.2em;
+    }
+  }
   .contact{
     .containCont{
       .header{
@@ -642,6 +645,20 @@ footer{
         form{
           padding-right: 0;
         }
+      }
+    }
+  }
+  .services{
+    .containSer{
+      .header{
+        font-size: 1.2em;
+      }
+    }
+  }
+  .contact{
+    .containCont{
+      .header{
+        font-size: 1.2em;
       }
     }
   }
@@ -688,18 +705,14 @@ footer{
 
 @media screen and (max-width: 420px) {
   .mainImg{
-    height: 200px;
+    height: 80px;
     .tagline{
-      top: 95px;
-      font-size: 1.4em;
+      display: none;
     }
   }
   .aboutUs{
     margin-top: 35px;
     .header{
-      br{
-        display: block;
-      }
     }
   }
   .caseStudy{
@@ -731,7 +744,7 @@ footer{
 @media screen and (max-width: 370px) {
   //case study
   .caseStudy{
-    height: 250px;
+    height: 235px;
     .containCs{
       .par{
         margin-bottom: 30px;

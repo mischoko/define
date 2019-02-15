@@ -124,7 +124,7 @@ nav ul li a:hover {
   top: 230px;
   font-size: 3em;
   left: 18%;
-  color: #009daf;
+  color: #393939;
   left: 18%;
   line-height: 1.3em;
 }
@@ -140,10 +140,6 @@ nav ul li a:hover {
   font-size: 1.5em;
 }
 
-.aboutUs .header br {
-  display: none;
-}
-
 .aboutUs .par {
   color: #787878;
   margin-top: 10px;
@@ -154,7 +150,7 @@ nav ul li a:hover {
 .aboutUs a {
   text-align: center;
   background: none;
-  border: solid 1px #787878;
+  border: solid 1px #393939;
   padding: 6px 24px 6px 24px;
   border-radius: 50px;
   text-decoration: none;
@@ -204,12 +200,12 @@ nav ul li a:hover {
 
 .caseStudy .containCs .linkCs {
   padding-top: 50px;
-  color: white;
+  color: #393939;
 }
 
 .caseStudy .containCs .linkCs a {
   text-decoration: none;
-  color: white;
+  color: #393939;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
@@ -219,7 +215,7 @@ nav ul li a:hover {
 }
 
 .caseStudy .containCs .par {
-  color: white;
+  color: #393939;
   max-width: 400px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -228,11 +224,11 @@ nav ul li a:hover {
 .caseStudy .containCs .btnCs {
   text-align: center;
   background: none;
-  border: solid 1px white;
+  border: solid 1px #393939;
   padding: 6px 24px 6px 24px;
   border-radius: 50px;
   text-decoration: none;
-  color: white;
+  color: #393939;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
@@ -251,13 +247,13 @@ nav ul li a:hover {
 }
 
 .caseStudy .containCs .btnCs:hover {
-  color: white;
-  border: solid 1px white;
+  color: #393939;
+  border: solid 1px #393939;
   padding: 6px 20px 6px 24px;
 }
 
 .caseStudy .containCs .btnCs:hover span {
-  color: white;
+  color: #393939;
   padding-left: 18px;
   padding-right: 5px;
 }
@@ -420,8 +416,8 @@ nav ul li a:hover {
 
 .contact .containCont .contForm form #submit:hover {
   color: white;
-  background: #009daf;
-  border: solid 1px #009daf;
+  background: #393939;
+  border: solid 1px #393939;
   cursor: pointer;
 }
 
@@ -450,7 +446,7 @@ nav ul li a:hover {
 }
 
 .contact .containCont .contForm .contInfo .socialMedia a i:hover {
-  color: #009daf;
+  color: #787878;
 }
 
 footer {
@@ -553,13 +549,15 @@ footer p {
   .nav-btn {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 20px;
     display: block;
     width: 48px;
     height: 48px;
     cursor: pointer;
     z-index: 9999;
     border-radius: 50%;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
   }
   .nav-btn i {
     display: block;
@@ -698,6 +696,9 @@ footer p {
 }
 
 @media screen and (max-width: 575px) {
+  .aboutUs .header {
+    font-size: 1.2em;
+  }
   .contact .containCont .header {
     margin-bottom: 0;
   }
@@ -709,6 +710,12 @@ footer p {
   }
   .contact .containCont .contForm form {
     padding-right: 0;
+  }
+  .services .containSer .header {
+    font-size: 1.2em;
+  }
+  .contact .containCont .header {
+    font-size: 1.2em;
   }
 }
 
@@ -750,17 +757,13 @@ footer p {
 
 @media screen and (max-width: 420px) {
   .mainImg {
-    height: 200px;
+    height: 80px;
   }
   .mainImg .tagline {
-    top: 95px;
-    font-size: 1.4em;
+    display: none;
   }
   .aboutUs {
     margin-top: 35px;
-  }
-  .aboutUs .header br {
-    display: block;
   }
   .caseStudy {
     margin-top: 30px;
@@ -782,7 +785,7 @@ footer p {
 
 @media screen and (max-width: 370px) {
   .caseStudy {
-    height: 250px;
+    height: 235px;
   }
   .caseStudy .containCs .par {
     margin-bottom: 30px;
