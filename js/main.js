@@ -111,7 +111,7 @@ document.querySelector('.menuContBtn').addEventListener("click", function(event)
 window.onload = function(){
     var width = window.innerWidth;
     var saveMenu = document.getElementById('mobileMenu');
-    var color0 = document.getElementsByClassName('menuItem')[0];
+//    var color0 = document.getElementsByClassName('menuItem')[0];
     if(width > 864){
         saveMenu.classList.remove('hidden');
     } else{
@@ -136,18 +136,22 @@ window.onload = function(){
     }
   
   	function onSubmit(event) {
-        var email = emailElement.value;
+        event.preventDefault();
+        var email = messageElement.value;
         var message = emailElement.value;
 
         if (email && message) {
 
             var request = new XMLHttpRequest();
-            var url = "http://www.define.sk/new/php.php"
+            var url = "https://www.define.sk/new/php.php"
 
             request.open('POST', url);
 
             var subject = subjectElement.value;
-            var data = "email=" + email + "&message=" + message + "&subj=" + subject;
+            var data = new FormData();
+            data.append("subj", subject);
+            data.append("message", message); 
+            data.append("email", email);
             request.send(data);
 
             request.onreadystatechange = function () {
@@ -156,10 +160,7 @@ window.onload = function(){
                 }
             };
         }
-
-        event.preventDefault();
         return false;
     };
-
     contactForm.onsubmit = onSubmit;
 }();
