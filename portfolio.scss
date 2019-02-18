@@ -1,0 +1,184 @@
+@import 'mains';
+
+//variables
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+
+//navbar fix
+.origNav{
+    top: 0;
+}
+main{
+    padding-top: 100px;
+}
+.flexContainer{
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    .flexContMargin{
+        padding-left: $marginInit;
+        padding-right: $marginInit;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .portUnit{
+            flex-direction: column;
+            width: calc(33.33%);
+            transition-duration: .3s;
+            a{
+                text-decoration: none;
+                color: $darkGray;
+            }
+            &:nth-child(1){
+                padding-right: 16.5px;
+            }
+            &:nth-child(2){
+                padding-left: 16.5px;
+                padding-right: 16.5px;
+            }
+            &:nth-child(3){
+                padding-left: 16.5px;
+            }
+            &:nth-child(4){
+                padding-right: 16.5px;
+            }
+            &:nth-child(5){
+                padding-left: 16.5px;
+                padding-right: 16.5px;
+            }
+            &:nth-child(6){
+                padding-left: 16.5px;
+            }
+            &:nth-child(7){
+                padding-right: 16.5px;
+            }
+            &:nth-child(8){
+                padding-left: 16.5px;
+                padding-right: 16.5px;
+            }
+            &:nth-child(9){
+                padding-left: 16.5px;
+            }
+            a{
+            }
+            .portImg1{
+                background: url('imgs/labzone_cs.jpg')no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+                transition-duration: .3s;
+                &:hover{
+                    transform: translateY(-10px)
+                }
+            }
+            h1{
+                color: $darkGray;
+                font-size: 1.5em;
+                margin-top: 20px;
+                margin-bottom: 0;
+                transition-duration: .3s;
+            }
+            p{
+                margin-top: 5px;
+                color: $lightGray;
+                transition-duration: .3s;
+            }
+            .hashes{
+                color: #c6ced1;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+.contact{
+    .containCont{
+    margin-top: 0;
+    }
+}
+
+//mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries//
+//mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries//
+//mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries////mediaqueries//
+
+@media screen and (max-width: 1200px) {
+    .flexContainer{
+        .flexContMargin{
+            padding-left: $marginMob;
+            padding-right: $marginMob;
+        }
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .flexContainer{
+        .flexContMargin{
+            .portUnit{
+                flex-basis: 50%;
+                &:nth-child(1){
+                    padding-right: 16.5px;
+                    padding-left: 0;
+                }
+                &:nth-child(2){
+                    padding-left: 16.5px;
+                    padding-right: 0;
+                }
+                &:nth-child(3){
+                    padding-right: 16.5px;
+                    padding-left: 0;
+                }
+                &:nth-child(4){
+                    padding-left: 16.5px;
+                    padding-right: 0;
+                }
+                &:nth-child(5){
+                    padding-left: 0px;
+                    padding-right: 16.5px;
+                }
+                &:nth-child(6){
+                    padding-left: 16.5px;
+                    padding-right: 0;
+                }
+                &:nth-child(7){
+                    padding-right: 16.5px;
+                    padding-left: 0;
+                }
+                &:nth-child(8){
+                    padding-left: 16.5px;
+                    padding-right: 0;
+                }
+                &:nth-child(9){
+                    padding: 0;
+                    flex-basis: 100%;
+
+                }
+                .portImg1{
+                    transition-duration: .3s;
+                &:hover{
+                    transform: translateY(-10px)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .flexContainer{
+        .flexContMargin{
+            .portUnit{
+                flex-basis: 100%;
+                padding: 0 !important;
+                .portImg1{
+                    transition-duration: .3s;
+                &:hover{
+                    transform: none;
+                    }
+                }
+            }
+        }
+    }
+}

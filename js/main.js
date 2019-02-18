@@ -111,14 +111,12 @@ document.querySelector('.menuContBtn').addEventListener("click", function(event)
 window.onload = function(){
     var width = window.innerWidth;
     var saveMenu = document.getElementById('mobileMenu');
-//    var color0 = document.getElementsByClassName('menuItem')[0];
     if(width > 864){
         saveMenu.classList.remove('hidden');
     } else{
         saveMenu.classList.add('hidden');
     }
 };
-
 //mailer script
 !function(){
     var contactForm = document.querySelector('.contact_form');
@@ -164,3 +162,10 @@ window.onload = function(){
     };
     contactForm.onsubmit = onSubmit;
 }();
+
+document.getElementById('okBtn').addEventListener("click", function(){
+    var calendar = document.getElementsByClassName('calendar')[0];
+    var success = document.getElementsByClassName('successAlert')[0];
+        calendar.style.display = "flex";
+        success.style.display = "none";
+});

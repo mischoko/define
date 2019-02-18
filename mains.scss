@@ -364,8 +364,62 @@
                   }
                 }
             }
+            .successAlert{
+              display: none;
+              flex-direction: column;
+              flex-basis: 65%;
+              padding-right: 20%;
+              max-width: 650px;
+              h1{
+                color: $darkGray;
+                font-size: 1.5em;
+              }
+              p{
+                color: $lightGray;
+                margin-top: 0;
+              }
+              wrapper{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+                .okBtn{
+                  border: none;
+                  text-align: center;
+                  background: none;
+                  border: solid 1px $darkGray;
+                  padding: 6px 24px 6px 24px;
+                  border-radius: 50px;
+                  text-decoration: none;
+                  color: $darkGray;
+                  transition-duration: .2s;
+                  span{
+                    color: transparent;
+                    padding-left: 0px;
+                    transition-duration: .2s;
+                    i{
+                        position: absolute;
+                        padding-top: 3px;
+                        padding-right: 0px;
+                    }
+                  }
+                &:hover{
+                  color: $darkGray;
+                  border: solid 1px $darkGray;
+                  padding: 6px 20px 6px 24px;
+                  cursor: pointer;
+                  span{
+                      color: $darkGray;
+                      padding-left: 18px;
+                      padding-right: 5px;
+                  }
+                }
+              }
+           }
         }
     }
+  }
 }
 //footer
 footer{
@@ -488,7 +542,7 @@ footer{
           margin-top: 4px;
         }
       }
-    }  
+    }
   #navBtn:checked {
     + .nav-btn {
       transform: rotate(45deg);
@@ -629,6 +683,7 @@ footer{
     }
   }
 }
+
 @media screen and (max-width: 575px) {
   .aboutUs{
     .header{
@@ -702,7 +757,6 @@ footer{
     }
   }
 }
-
 @media screen and (max-width: 420px) {
   .mainImg{
     height: 80px;
@@ -740,7 +794,6 @@ footer{
     }
   }
 }
-
 @media screen and (max-width: 370px) {
   //case study
   .caseStudy{

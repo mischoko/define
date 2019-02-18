@@ -873,4 +873,202 @@ footer p {
     width: 1000px;
   }
 }
-/*# sourceMappingURL=mains.css.map */
+
+.origNav {
+  top: 0;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.flexContainer {
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.flexContainer .flexContMargin {
+  padding-left: 18%;
+  padding-right: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexContainer .flexContMargin .portUnit {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33.33%);
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.flexContainer .flexContMargin .portUnit a {
+  text-decoration: none;
+  color: #393939;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(1) {
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(2) {
+  padding-left: 16.5px;
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(3) {
+  padding-left: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(4) {
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(5) {
+  padding-left: 16.5px;
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(6) {
+  padding-left: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(7) {
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(8) {
+  padding-left: 16.5px;
+  padding-right: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit:nth-child(9) {
+  padding-left: 16.5px;
+}
+
+.flexContainer .flexContMargin .portUnit .portImg1 {
+  background: url("imgs/labzone_cs.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.flexContainer .flexContMargin .portUnit .portImg1:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.flexContainer .flexContMargin .portUnit h1 {
+  color: #393939;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.flexContainer .flexContMargin .portUnit p {
+  margin-top: 5px;
+  color: #787878;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.flexContainer .flexContMargin .portUnit .hashes {
+  color: #c6ced1;
+  margin-bottom: 60px;
+}
+
+.contact .containCont {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .flexContainer .flexContMargin {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .flexContainer .flexContMargin .portUnit {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(1) {
+    padding-right: 16.5px;
+    padding-left: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(2) {
+    padding-left: 16.5px;
+    padding-right: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(3) {
+    padding-right: 16.5px;
+    padding-left: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(4) {
+    padding-left: 16.5px;
+    padding-right: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(5) {
+    padding-left: 0px;
+    padding-right: 16.5px;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(6) {
+    padding-left: 16.5px;
+    padding-right: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(7) {
+    padding-right: 16.5px;
+    padding-left: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(8) {
+    padding-left: 16.5px;
+    padding-right: 0;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(9) {
+    padding: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .flexContainer .flexContMargin .portUnit .portImg1 {
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  .flexContainer .flexContMargin .portUnit .portImg1:hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .flexContainer .flexContMargin .portUnit {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 !important;
+  }
+  .flexContainer .flexContMargin .portUnit .portImg1 {
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  .flexContainer .flexContMargin .portUnit .portImg1:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
