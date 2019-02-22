@@ -948,6 +948,8 @@ nav ul li a {
   right: 0;
   position: absolute;
   max-width: 500px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .mainWrap .imgBg .imgCage {

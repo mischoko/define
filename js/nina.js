@@ -163,31 +163,31 @@ document.getElementById('okBtn').addEventListener("click", function(){
 });
 
 var cage = document.getElementById('cage');
-            var bg = document.getElementById('bgMagic');
+var bg = document.getElementById('bgMagic');
 
-            var arrc = ["linear-gradient(#1b3641,black)",
-                        "linear-gradient(#1b3641,black)",
-                        "linear-gradient(#3f364b,black)",
-                        "linear-gradient(#3f364b,black)",
-                        "linear-gradient(#27283a,black)",
-                        "linear-gradient(#444e45,black)",
-                        "linear-gradient(#3f2f2f,black)",];
+var arrc = ["linear-gradient(#1b3641,black)",
+            "linear-gradient(#1b3641,black)",
+            "linear-gradient(#3f364b,black)",
+            "linear-gradient(#3f364b,black)",
+            "linear-gradient(#27283a,black)",
+            "linear-gradient(#444e45,black)",
+            "linear-gradient(#3f2f2f,black)",];
 
-            var arr =  ["url('imgs/nina/00.jpg')no-repeat",
-                        "url('imgs/nina/01.jpg')no-repeat",
-                        "url('imgs/nina/02.jpg')no-repeat",
-                        "url('imgs/nina/03.jpg')no-repeat",
-                        "url('imgs/nina/04.jpg')no-repeat",
-                        "url('imgs/nina/05.jpg')no-repeat",
-                        "url('imgs/nina/06.jpg')no-repeat"];
-            var i = -1
-            function next(){
-                  i = i >= arr.length -1 ? 0 : i + 1;
-                  cage.style.background = arr[i];
-                  bg.style.background = arrc[i];
-            }
-            function prev() {
-                  i = i > 0 ? i - 1 : arr.length - 1;
-                  cage.style.background = arr[i];
-                  bg.style.background = arrc[i];
-            }
+var arr =  ["url('imgs/nina/00.jpg')no-repeat",
+            "url('imgs/nina/01.jpg')no-repeat",
+            "url('imgs/nina/02.jpg')no-repeat",
+            "url('imgs/nina/03.jpg')no-repeat",
+            "url('imgs/nina/04.jpg')no-repeat",
+            "url('imgs/nina/05.jpg')no-repeat",
+            "url('imgs/nina/06.jpg')no-repeat"];
+var i = -1
+function next(){
+        i = i >= arr.length -1 ? 0 : i + 1;
+        cage.style.background = arr[i];
+        bg.style.background = arrc[i];
+}
+function prev() {
+        i = i > 0 ? i - 1 : arr.length - 1;
+        cage.style.background = arr[i];
+        bg.style.background = arrc[i];
+}
