@@ -1,0 +1,130 @@
+@import 'mains';
+
+//variables
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+
+.topCont{
+    width: 100%;
+    background: black;
+    height: 400px;
+    .topImg{
+        background: url('imgs/above/abovetop.jpg')no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        max-width: 990px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+ //menu items
+ nav ul > li > a {
+        color: white;
+        transition-duration: .2s;
+        &:hover{
+            color: #ccc;
+        }
+    }
+.nav-btn > i{
+    background: white;
+}
+
+.flexMain{
+    display: flex;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    margin-top: 30px;
+    height: 400px;
+    .text{
+        flex-basis: 50%;
+        max-width: 500px;
+        margin-right: 50px;
+        align-self: center;
+        h1{
+            color: $darkGray;
+            margin-bottom: 0px;
+        }
+        p{
+            color: $lightGray;
+            line-height: 1.6em;
+            transition-duration: .2s;
+            margin-top: 10px;
+        }
+    }
+    .imgUp{
+        background: url('imgs/above/coffee1.jpg')no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        flex-basis: 50%;
+        margin-left: 50px;
+        transition-duration: .3s;
+        &:hover{
+            transform: translateY(-10px);
+            cursor: pointer;
+            opacity: .9;
+            }
+    }
+    .imgUp3{
+        background: url('imgs/above/coffee2.jpg')no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        flex-basis: 50%;
+        margin-left: 50px;
+        transition-duration: .3s;
+        &:hover{
+            transform: translateY(-10px);
+            cursor: pointer;
+            opacity: .9;
+            }
+    }
+}
+.flip{
+    flex-direction: row-reverse;
+    margin-top: 0px;
+    .text2{
+        flex-basis: 50%;
+        max-width: 500px;
+        align-self: center;
+        margin-left: 50px;
+        h1{
+            color: $darkGray;
+            margin-bottom: 0px;
+        }
+        p{
+            color: $lightGray;
+            line-height: 1.6em;
+            transition-duration: .2s;
+            margin-top: 10px;
+        }
+    }
+    .imgUp2{
+        background: url('imgs/above/coffee3.jpg')no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        flex-basis: 50%;
+        margin-right: 50px;
+        transition-duration: .3s;
+        &:hover{
+            transform: translateY(-10px);
+            cursor: pointer;
+            opacity: .9;
+            }
+    }
+}
+
+.init{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .6s all ease-in-out;
+}
+.intro{
+    opacity: 1;
+    transform: translateY(0px);
+}

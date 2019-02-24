@@ -169,3 +169,20 @@ document.getElementById('okBtn').addEventListener("click", function(){
         calendar.style.display = "flex";
         success.style.display = "none";
 });
+//scroll to services div based on hash upon return from subpage
+var gethash = window.location.hash.substr(1);
+if (gethash === "servScroll"){
+    document.querySelector('.menuServBtn').click();
+    setTimeout(function(){
+        //removes the #servScroll
+    history.pushState("", document.title, window.location.pathname);
+    }), 500;
+}
+//scroll to contact div based on hash upon return from subpage
+else if (gethash === "contScroll"){
+        document.querySelector('.menuContBtn').click();
+        setTimeout(function(){
+            //removes the #contScroll
+        history.pushState("", document.title, window.location.pathname);
+        }), 500;
+}
