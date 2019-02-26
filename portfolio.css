@@ -1177,11 +1177,15 @@ main {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 550px) {
   .flexContainer .flexContMargin .portUnit {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 0 !important;
+  }
+  .flexContainer .flexContMargin .portUnit:nth-child(9) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .flexContainer .flexContMargin .portUnit .portImg1 {
     -webkit-transition-duration: .3s;

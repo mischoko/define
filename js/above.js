@@ -78,40 +78,45 @@ window.onload = function(){
     }
 };
 
-//scroll to services div based on hash upon return from subpage
-var gethash = window.location.hash.substr(1);
-if (gethash === "servScroll"){
-    document.querySelector('.menuServBtn').click();
-    setTimeout(function(){
-        //removes the #servScroll
-    history.pushState("", document.title, window.location.pathname);
-    }), 500;
-}
-//scroll to contact div based on hash upon return from subpage
-else if (gethash === "contScroll"){
-        document.querySelector('.menuContBtn').click();
-        setTimeout(function(){
-            //removes the #contScroll
-        history.pushState("", document.title, window.location.pathname);
-        }), 500;
-};
 //text revelation function after scrolling
-window.onscroll = function() {
-var first = document.getElementsByClassName('fade')[0];
-var second = document.getElementsByClassName('fade')[1];
-if(first.classList.contains('intro') && second.classList.contains('intro')){
-    return;
-}
-if(pageYOffset > 100){
-    first.classList.add('intro');
+document.onscroll = function() {
+    var first = document.getElementsByClassName('fade')[0];
+    var second = document.getElementsByClassName('fade')[1];
+    if(first.classList.contains('intro') && second.classList.contains('intro')){
+        return;
     }
-    if (pageYOffset > 450){
-        second.classList.add('intro');
-    }
+    if(pageYOffset > 100){
+        first.classList.add('intro');
+        }
+        if (pageYOffset > 450){
+            second.classList.add('intro');
+        }
 };
 
-var um = document.querySelectorAll('pop')
-    um.addEventListener("click", function(){
-var bla = um.dataset.name;
-console.log(bla);
+var img1 = document.getElementsByClassName('pop')[0];
+var img2 = document.getElementsByClassName('pop')[1];
+var img3 = document.getElementsByClassName('pop')[2];
+var zoom1 = document.getElementsByClassName('zoomImg1')[0];
+var zoom2 = document.getElementsByClassName('zoomImg2')[0];
+var zoom3 = document.getElementsByClassName('zoomImg3')[0];
+
+img1.addEventListener("click", function(){
+    zoom1.style.display = "block";
+});
+zoom1.addEventListener("click", function(){
+    zoom1.style.display = "none";
+});
+
+img2.addEventListener("click", function(){
+    zoom2.style.display = "block";
+});
+zoom2.addEventListener("click", function(){
+    zoom2.style.display = "none";
+});
+
+img3.addEventListener("click", function(){
+    zoom3.style.display = "block";
+});
+zoom3.addEventListener("click", function(){
+    zoom3.style.display = "none";
 });

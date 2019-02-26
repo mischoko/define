@@ -242,7 +242,6 @@ main{
                     padding-left: 0;
                     padding-right: 16.5px;
                     flex-basis: 50%;
-
                 }
                 .portImg1{
                     transition-duration: .3s;
@@ -255,12 +254,15 @@ main{
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 550px) {
     .flexContainer{
         .flexContMargin{
             .portUnit{
                 flex-basis: 100%;
                 padding: 0 !important;
+                &:nth-child(9){
+                    flex-basis: 100%;
+                }
                 .portImg1{
                     transition-duration: .3s;
                 &:hover{
