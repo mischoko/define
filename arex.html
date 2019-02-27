@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Define - Branding, stratégia, dizajn</title>
-      <link rel="stylesheet" href="portfolio.css">
+      <link rel="stylesheet" href="arex.css">
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,900" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link rel="shortcut icon" type="image/png" href="imgs/define_favicon.png"/>
@@ -33,7 +33,7 @@
                         <a href="https://www.define.sk/">
                               <svg class="mainLogo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 78" style="enable-background:new 0 0 300 78;" xml:space="preserve">
                               <style type="text/css">
-                              .st0{fill:#393939;}
+                              .st0{fill:#fff;}
                               </style>
                               <g>
                               <g>
@@ -74,116 +74,87 @@
                   </div>
                   <div class="nav-wrapper hidden" id="mobileMenu">
                         <ul id="menu">
-                              <li><a class="menuItem" href="index.html#servScroll" data-scroll="servScroll">Služby</a></li>
+                              <li><a class="menuItem menuServBtn" href="index.html#servScroll">Služby</a></li>
                               <li><a class="menuItem" href="portfolio">Portfólio</a></li>
                               <li><a class="menuItem" href="https://www.define.sk/blog">Blog</a></li>
-                              <li><a class="menuItem menuContBtn" href="#" data-scroll="contScroll">Kontakt</a></li>
+                              <li><a class="menuItem menuContBtn" href="index.html#contScroll">Kontakt</a></li>
                         </ul>
                   </div>
             </nav>
             </div>
       </div>
       <main>
-            <div class="flexContainer">
-                  <div class="flexContMargin">
-                        <div class="portUnit">
-                              <a href="#"><div class="portImg1"></div></a>
-                              <h1>Physioactive web</h1>
-                              <p>Nový <a href="https://www.physioactive.sk">web</a> pre diagnosticko rehabilitačné centrum</p>
-                              <p class="hashes">#UI #redizajn #web</p>
+           <div class="topCont"><div class="topImg"></div></div>
+            <div class="flexMain">
+                  <div class="text">
+                        <h1>Redizajn webu</h1>
+                        <p>Cieľom tvorby nového webu bolo hlavne zlepšiť performance stránky, loading time, zjednodušiť navigáciu a prevzdušniť dizajn.</p>
+                  </div>
+                  <div class="imgUp pop" data-name="one"></div>
+            </div>
+            <div class="flexMain flip">
+                  <div class="text2 init fade">
+                        <p>Okrem toho sme sa zamerali aj na SEO a content, ktorý bol upravovaný nielen obsahovo, ale aj štrukturálne. Namiesto nutnosti načítavania separátnej stránky pre každú službu, bolo vytvorené kompaktné a prehľadné menu služieb zobrazujúce charakteristiky priamo v danej sekcii.</p>
+                  </div>
+                  <div class="imgUp2 pop" data-name="two"></div>
+            </div>
+            <div class="flexMain">
+                  <div class="text init fade">
+                        <p>Aj napriek tomu, že bola galéria rozšírená o množstvo náhľadov realizácií prác web sa nám podarilo udržať pod 35MB, čo umožňuje mega-rýchly load.</p>
+                  </div>
+                  <div class="imgUp3 pop" data-name="three"></div>
+            </div>
+      </main>
+      <div class="zoomImg1 close">
+            <div class="zImg1"></div>
+      </div>
+      <div class="zoomImg2 close">
+            <div class="zImg2"></div>
+      </div>
+      <div class="zoomImg3 close">
+            <div class="zImg3"></div>
+      </div>
+      <section class="contact section" id="contScroll">
+            <div class="containCont">
+                  <h1 class="header">Máte záujem o redizajn webu?</h1>
+                  <div class="contForm">
+                        <form class="contact_form calendar" action="php.php" method="POST" autocomplete="off">
+                              <input class="input-subject" id="subject" type="text" name="subj" required placeholder="Predmet">
+                              <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
+                              <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Správa"></textarea>
+                              <div>
+                                    <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
+                                    <label for="gdpr" class="gdpr">Súhlasím so spracovaním osobných údajov.</label>
+                              </div>
+                              <input id="submit" type="submit" name="submit" value="Odoslať">
+                        </form>
+                        <div class="successAlert">
+                              <h1>Ďakujeme</h1>
+                              <p>Na vašu správu odpovieme hneď ako to bude možné.</p>
+                              <wrapper><a class="okBtn" id="okBtn">Rozumiem<span><i class="fa fa-caret-right"></i></span></a></wrapper>
                         </div>
-                        <div class="portUnit">
-                              <a href="#"><div class="portImg2"></div></a>
-                              <h1>LabZone UI</h1>
-                              <p>UI dizajn pre firmu zaoberajúcu sa IT riešeniami na mieru</p>
-                              <p class="hashes">#UI dizajn #web</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="#"><div class="portImg3"></div></a>
-                              <h1>Mr Wood UX/UI</h1>
-                              <p>Komplexný UI/UX dizajn pre 3D konfigurátor vstavaných skríň</p>
-                              <p class="hashes">#UI #UX #dizajn #web</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="#"><div class="portImg4"></div></a>
-                              <h1>VIZUALDK web</h1>
-                              <p>Nové logo, identita a web pre projekčnú firmu VIZUALDK</p>
-                              <p class="hashes">#redizajn #logo #identita #web</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="ninastyle"><div class="portImg5"></div></a>
-                              <h1>Ninastyle foto</h1>
-                              <p>Konceptuálne fotografie pre obchod s exkluzívnou dámskou módou</p>
-                              <p class="hashes">#redizajn #web</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="above"><div class="portImg6"></div></a>
-                              <h1>Above logo</h1>
-                              <p>Logo pre Brazílskeho výrobcu kávy pestovanej vysoko v horách</p>
-                              <p class="hashes">#logo #dizajn #obal #identita</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="extra"><div class="portImg7"></div></a>
-                              <h1>E-xtra učebnice</h1>
-                              <p>Dizajn a print-prep 3 učebníc pre jazykovú školu E-xtra Prešov</p>
-                              <p class="hashes">#print #knihy #dizajn</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="arex"><div class="portImg8"></div></a>
-                              <h1>Arex web</h1>
-                              <p>Prerábka <a href="https://www.arex.sk">webstránky</a> pre tlačiareň arex.sk v Dolnom Kubíne</p>
-                              <p class="hashes">#fotografia</p>
-                        </div>
-                        <div class="portUnit">
-                              <a href="#"><div class="portImg9"></div></a>
-                              <h1>AR Visual web</h1>
-                              <p>Nový web pre firmu čo rieši appky na Augmented Reality platforme</p>
-                              <p class="hashes">#UI #redizajn #web</p>
+                        <div class="contInfo">
+                                    <h2 class="subhead">Define design</h2>
+                                    <p class="par">
+                                          Mariánske námestie 30/1<br>
+                                          Žilina 010 01<br>
+                                          <br>
+                                          +421 917 301 716<br>
+                                          +421 919 353 024<br>
+                                          info@define.sk
+                                    </p>
+                                    <div class="socialMedia">
+                                    <a href="https://www.linkedin.com/in/michal-%C5%BE%C3%A1k-62a89a156/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/definedsgn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/define_dsgn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
                         </div>
                   </div>
             </div>
-      </main>
-            <section class="contact section" id="contScroll">
-                  <div class="containCont">
-                        <h1 class="header">KONTAKT</h1>
-                        <div class="contForm">
-                              <form class="contact_form calendar" action="php.php" method="POST" autocomplete="off">
-                                    <input class="input-subject" id="subject" type="text" name="subj" required placeholder="Predmet">
-                                    <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
-                                    <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Správa"></textarea>
-                                    <div>
-                                          <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
-                                          <label for="gdpr" class="gdpr">Súhlasím so spracovaním osobných údajov.</label>
-                                    </div>
-                                    <input id="submit" type="submit" name="submit" value="Odoslať">
-                              </form>
-                              <div class="successAlert">
-                                    <h1>Ďakujeme</h1>
-                                    <p>Na vašu správu odpovieme hneď ako to bude možné.</p>
-                                    <wrapper><a class="okBtn" id="okBtn">Rozumiem<span><i class="fa fa-caret-right"></i></span></a></wrapper>
-                              </div>
-                              <div class="contInfo">
-                                     <h2 class="subhead">Define design</h2>
-                                     <p class="par">
-                                           Mariánske námestie 30/1<br>
-                                           Žilina 010 01<br>
-                                           <br>
-                                           +421 917 301 716<br>
-                                           +421 919 353 024<br>
-                                           info@define.sk
-                                     </p>
-                                     <div class="socialMedia">
-                                          <a href="https://www.linkedin.com/in/michal-%C5%BE%C3%A1k-62a89a156/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                          <a href="https://www.facebook.com/definedsgn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                          <a href="https://www.instagram.com/define_dsgn/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                     </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
+      </section>
       <footer>
             <p>&copy; 2019 Define design</p>
       </footer>
-      <script src="js/mainPfl.js"></script>
+      <script src="js/above.js"></script>
 </body>
 </html>

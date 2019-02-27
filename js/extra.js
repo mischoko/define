@@ -84,29 +84,6 @@ function fun() {
         bug.classList.add("hidden");
     }
 }
-
-//scrolling function services
-document.querySelector('.menuServBtn').addEventListener("click", function(event) {
-    event.preventDefault();
-    var offset = 0, y = 0, dy, call = setInterval(function(){
-    	if( Math.abs(dy=offset-y)>1 ) y += dy;
-      else { clearInterval(call); y = offset; }
-      document.documentElement.scrollTop = y - 90;
-    },10);
-    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
-		y = document.documentElement.scrollTop;
-});
-//scrolling function contacts
-document.querySelector('.menuContBtn').addEventListener("click", function(event) {
-    event.preventDefault();
-    var offset = 0, y = 0, dy, call = setInterval(function(){
-    	if( Math.abs(dy=offset-y)>1 ) y += dy;
-      else { clearInterval(call); y = offset; }
-      document.documentElement.scrollTop = y - 90;
-    },10);
-    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
-		y = document.documentElement.scrollTop;
-});
 //fixes the mobile menu overlay bug
 window.onload = function(){
     var width = window.innerWidth;
@@ -169,23 +146,7 @@ document.getElementById('okBtn').addEventListener("click", function(){
         calendar.style.display = "flex";
         success.style.display = "none";
 });
-//scroll to services div based on hash upon return from subpage
-var gethash = window.location.hash.substr(1);
-if (gethash === "servScroll"){
-    document.querySelector('.menuServBtn').click();
-    setTimeout(function(){
-        //removes the #servScroll
-    history.pushState("", document.title, window.location.pathname);
-    }), 500;
-}
-//scroll to contact div based on hash upon return from subpage
-else if (gethash === "contScroll"){
-        document.querySelector('.menuContBtn').click();
-        setTimeout(function(){
-            //removes the #contScroll
-        history.pushState("", document.title, window.location.pathname);
-        }), 500;
-}
+
 //text revelation function after scrolling
 document.onscroll = function() {
     var first = document.getElementsByClassName('fade')[0];
