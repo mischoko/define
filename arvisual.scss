@@ -8,21 +8,25 @@ $marginMob: 4%;
 
 .topCont{
     width: 100%;
-    background: none;
+    background: url('imgs/arvisual/top.jpg')no-repeat;
+    background-size: cover;
     height: 400px;
+    display: flex;
     .topImg{
-        background: url('imgs/labzone/labzone.jpg')no-repeat;
+        background: url('imgs/arvisual/arlogo.svg')no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 400px;
+        width: 250px;
+        height: 70px;
         margin: 0 auto;
+        align-self: center;
     }
 }
 
  //menu items
  nav ul > li > a {
-        color: $darkGray;
+        color: white;
         transition-duration: .2s;
         &:hover{
             color: #ccc;
@@ -55,7 +59,7 @@ $marginMob: 4%;
         }
     }
     .imgUp{
-        background: url('imgs/labzone/labzone_mob.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_tab.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -69,7 +73,7 @@ $marginMob: 4%;
             }
     }
     .imgUp3{
-        background: url('imgs/labzone/labzone_tab.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_mob.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -94,7 +98,7 @@ $marginMob: 4%;
     display: none;
     }
     .zImg1{
-        background: url('imgs/labzone/labzone_mob.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_tab.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -105,7 +109,7 @@ $marginMob: 4%;
         transform: translate(-50%, -50%);
     }
     .zImg2{
-        background: url('imgs/labzone/labzone_ntb.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_ntb.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -116,7 +120,7 @@ $marginMob: 4%;
         transform: translate(-50%, -50%);
     }
     .zImg3{
-        background: url('imgs/labzone/labzone_tab.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_mob.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -146,7 +150,7 @@ $marginMob: 4%;
         }
     }
     .imgUp2{
-        background: url('imgs/labzone/labzone_ntb.jpg')no-repeat;
+        background: url('imgs/arvisual/arvisual_ntb.jpg')no-repeat;
         background-position: center;
         background-size: contain;
         width: 100%;
@@ -173,7 +177,7 @@ $marginMob: 4%;
 
 @media screen and (max-width: 1500px) {
 .flexMain{
-    height: 230px;
+    height: 380px;
     margin-top: 100px;
     .imgUp, .imgUp2, .imgUp3{
             background-size: cover;
@@ -184,6 +188,9 @@ $marginMob: 4%;
     .flexMain{
         padding-left: $marginMob;
         padding-right: $marginMob;
+        .imgUp, .imgUp2{
+            background-size: contain;
+        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -203,9 +210,10 @@ $marginMob: 4%;
             margin-top: 30px;
         }
         .imgUp, .imgUp2, .imgUp3{
-            height: 300px;
+            height: 500px;
             margin: 0;
             margin-top: 30px;
+            background-size: contain;
         }
     }
 }

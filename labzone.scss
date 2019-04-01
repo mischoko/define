@@ -173,7 +173,7 @@ $marginMob: 4%;
 
 @media screen and (max-width: 1500px) {
 .flexMain{
-    height: 230px;
+    height: 320px;
     margin-top: 100px;
     .imgUp, .imgUp2, .imgUp3{
             background-size: cover;
@@ -184,6 +184,9 @@ $marginMob: 4%;
     .flexMain{
         padding-left: $marginMob;
         padding-right: $marginMob;
+        .imgUp, .imgUp2, .imgUp3{
+            background-size: contain;
+        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -203,9 +206,13 @@ $marginMob: 4%;
             margin-top: 30px;
         }
         .imgUp, .imgUp2, .imgUp3{
-            height: 300px;
+            height: 350px;
             margin: 0;
             margin-top: 30px;
+        }
+        .imgUp{
+            height: 500px;
+            background-size: cover;
         }
     }
 }
@@ -216,7 +223,7 @@ $marginMob: 4%;
             margin-top: 20px;
         }
         .imgUp, .imgUp2, .imgUp3{
-            height: 200px;
+            height: 300px;
             margin-top: 20px;
         }
     }

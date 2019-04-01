@@ -177,7 +177,7 @@ $marginMob: 4%;
 
 @media screen and (max-width: 1500px) {
 .flexMain{
-    height: 230px;
+    height: 330px;
     margin-top: 100px;
     .imgUp, .imgUp2, .imgUp3{
             background-size: cover;
@@ -188,6 +188,10 @@ $marginMob: 4%;
     .flexMain{
         padding-left: $marginMob;
         padding-right: $marginMob;
+        height: 250px;
+        .imgUp, .imgUp2, .imgUp3{
+            background-size: contain;
+        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -222,6 +226,10 @@ $marginMob: 4%;
         .imgUp, .imgUp2, .imgUp3{
             height: 200px;
             margin-top: 20px;
+        }
+        .imgUp,.imgUp3{
+            height: 400px;
+            background-size: cover;
         }
     }
 }
